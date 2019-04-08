@@ -7,9 +7,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Angular-Material-Demo';
-  isChecked = true;
+  colors = [
+    { id: 1, name: 'Red'},
+    { id: 2, name: 'Green'},
+    { id: 3, name: 'Blue'},
+  ];
 
-  onChange($event) {
-    console.log($event);
-  }
+  color = 2;
+
 }
